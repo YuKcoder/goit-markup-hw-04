@@ -142,7 +142,8 @@ img {
 
 .header-items .link,
 .header-contacts .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
 }
 
@@ -160,6 +161,11 @@ img {
 
 .header-contacts .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Герой */
