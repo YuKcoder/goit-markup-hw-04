@@ -100,11 +100,6 @@ img {
   color: var(--dark-color);
 }
 
-.hero,
-.footer {
-  background-color: var(--dark-bg-color);
-}
-
 /* Стили для index.html */
 
 /* Шапка */
@@ -172,6 +167,13 @@ img {
 
 .hero {
   padding: 200px 0;
+  max-width: 1600px;
+
+  background-color: var(--dark-bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-contants {
@@ -296,6 +298,8 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--dark-bg-color);
 }
 
 .logo-footer {
