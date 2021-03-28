@@ -302,6 +302,7 @@ img {
 .team-items .item {
   width: calc(100% / 4);
 
+  background-color: var(--light-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -334,9 +335,13 @@ img {
   padding-bottom: 30px;
 }
 
-.social-icons {
+.social-item {
   display: inline-flex;
   list-style: none;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link {
@@ -373,6 +378,16 @@ img {
   background-color: var(--dark-bg-color);
 }
 
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info,
+.footer-social {
+  width: calc(100% / 12 * 3);
+}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -397,6 +412,22 @@ img {
 
 .footer-contacts .item:first-child {
   padding-bottom: 9px;
+}
+
+.social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+.link-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-footer {
+  fill: var(--light-text-color);
 }
 
 /* Cтили для portfolio.html */
